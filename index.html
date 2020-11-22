@@ -1,0 +1,237 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NYC</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=IBM+Plex+Mono:wght@200;300&display=swap&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+
+    <!-- import the webpage's javascript file -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script> -->
+  </head>  
+  <body>
+    <div class="fixedbg"></div>
+    <div id="fullpage">
+    <div class="section" id="sec1">
+      <div class="slide empty" id="101"></div>
+      <div class="slide broadway" id="201" data-type="Wall St."><div class="content"></div></div>
+      <div class="slide wall" id="301" data-type="Wall St."><div class="content"></div></div>
+      <div class="slide wall" id="401" data-type="Wall St."><div class="content"></div></div>
+      <div class="slide wall" id="501" data-type="Wall St."><div class="content"></div></div>
+      <div class="slide wall" id="601" data-type="Wall St."><div class="content"></div></div>
+      <div class="slide wall" id="701" data-type="Wall St."><div class="content"></div></div>
+    </div>
+    <div class="section" id="sec2">
+      <div class="slide empty" id="102"></div>
+      <div class="slide broadway" id="202" data-type="Broadway"><div class="content"></div></div>
+      <div class="slide empty" id="302"></div>
+      <div class="slide new vertical" id="402" data-type="New St."><div class="content"></div></div>
+      <div class="slide broad" id="502" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide empty" id="602"></div>
+      <div class="slide williams" id="702" data-type="Williams St."><div class="content"></div></div>
+    </div>
+    <div class="section" id="sec3">
+      <div class="slide empty" id="103"></div>
+      <div class="slide broadway" id="203" data-type="Broadway"><div class="content"></div></div>
+      <div class="slide exchange-pl" id="303" data-type="Exchange Pl."><div class="content"></div></div>
+      <div class="slide exchange-pl" id="403" data-type="Exchange Pl."><div class="content"></div></div>
+      <div class="slide broad" id="503" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide exchange-pl" id="603" data-type="Exchange Pl."><div class="content"></div></div>
+      <div class="slide williams" id="703" data-type="Williams St."><div class="content"></div></div>
+    </div>
+    <div class="section" id="sec4">
+      <div class="slide empty" id="104"></div>
+      <div class="slide broadway" id="204" data-type="Broadway"><div class="content"></div></div>
+      <div class="slide empty" id="304"></div>
+      <div class="slide new vertical" id="404" data-type="New St."><div class="content"></div></div>
+      <div class="slide broad" id="504" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide empty" id="604"></div>
+      <div class="slide williams" id="704" data-type="Williams St."><div class="content"></div></div>
+    </div>
+    <div class="section" id="sec5">
+      <div class="slide broadway" id="105" data-type="Broadway"><a name="broadway"></a><div class="content"></div></div>
+      <div class="slide bowling-green" id="205" data-type="Bowling Green"><div class="content"></div></div>
+      <div class="slide broadway" id="305" data-type="Broadway"><div class="content"></div></div>
+      <div class="slide beaver" id="405" data-type="Beaver St."><div class="content"></div></div>
+      <div class="slide broad" id="505" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide beaver" id="605" data-type="Beaver St."><div class="content"></div></div>
+      <div class="slide williams" id="705" data-type="Williams St."><div class="content"></div></div>
+    </div>
+    <div class="section" id="sec6">
+      <div class="slide broadway" id="106" data-type="Battery Pl"><div class="content"></div></div>
+      <div class="slide bowling-green" id="206" data-type="Bowling Green"></div>
+      <div class="slide broadway" id="306" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide empty" id="406"></div>
+      <div class="slide broad" id="506" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide empty" id="606"></div>
+      <div class="slide williams" id="706" data-type="Williams St."><div class="content"></div></div>
+    </div>
+    <div class="section" id="sec7">
+      <div class="slide state" id="107" data-type="State St."><div class="content"></div></div>
+      <div class="slide empty" id="207"></div>
+      <div class="slide whitehall" id="307" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide stone horizontal" id="407" data-type="Stone St."><div class="content"></div></div>
+      <div class="slide broad" id="507" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide s-williams" id="607" data-type="S. Williams St."><div class="content"></div></div>
+      <div class="slide williams" id="707" data-type="Williams St."><div class="content"></div></div>
+    </div>
+    <div class="section" id="sec8">
+      <div class="slide state" id="108" data-type="State St."><div class="content"></div></div>
+      <div class="slide bridge" id="208" data-type="Bridge St."><div class="content"></div></div>
+      <div class="slide whitehall" id="308" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide bridge" id="408" data-type="Bridge St."><div class="content"></div></div>
+      <div class="slide broad" id="508" data-type="Broad St."></div>
+      <div class="slide coenties-alley vertical" id="608" data-type="Coenties Alley"></div>
+      <div class="slide williams" id="708" data-type="Williams St."><div class="content"></div></div>
+     </div>
+     <div class="section" id="sec9">
+      <div class="slide state" id="109" data-type="State St."><div class="content"></div></div>
+      <div class="slide empty" id="209"></div>
+      <div class="slide whitehall" id="309" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide empty" id="409"></div>
+      <div class="slide broad" id="509" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide pearl" id="609" data-type="Pearl St."><div class="content"></div></div>
+      <div class="slide williams" id="709" data-type="Williams St."><div class="content"></div></div>
+     </div>
+     <div class="section" id="sec10">
+      <div class="slide state" id="110" data-type="State St."><div class="content"></div></div>
+      <div class="slide pearl" id="210" data-type="Pearl St."><div class="content"></div></div>
+      <div class="slide whitehall" id="310" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide pearl" id="410" data-type="Pearl St."><div class="content"></div></div>
+      <div class="slide broad" id="510" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide coenties-slip verical" id="610" data-type="Coenties Slip"></div>
+      <div class="slide water" id="710" data-type="Water St."><div class="content"></div></div>
+     </div>
+     <div class="section" id="sec11">
+      <div class="slide state" id="111" data-type="State St."><div class="content"></div></div>
+      <div class="slide empty" id="211"></div>
+      <div class="slide whitehall" id="311" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide moore vertical" id="411" data-type="Moore St."><div class="content"></div></div>
+      <div class="slide broad" id="511" data-type="Broad St."><div class="content"></div></div>
+      <div class="slide water" id="611" data-type="Water St."><div class="content"></div></div>
+      <div class="slide old-slip" id="711" data-type="Old Slip"><div class="content"></div></div>
+     </div>
+     <div class="section" id="sec12">
+      <div class="slide state" id="112" data-type="State St."><div class="content"></div></div>
+      <div class="slide state" id="212" data-type="State St."><div class="content"></div></div>
+      <div class="slide whitehall" id="312" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide water" id="412" data-type="Water St."><div class="content"></div></div>
+      <div class="slide water" id="512" data-type="Water St."><div class="content"></div></div>
+      <div class="slide veteran-memorial" id="612" data-type="Veteran Memorial"><div class="content"></div></div>
+      <div class="slide south" id="712" data-type="South St."><div class="content"></div></div>
+     </div>
+     <div class="section" id="sec13">
+      <div class="slide empty" id="113"></div>
+      <div class="slide empty" id="213"></div>
+      <div class="slide whitehall" id="313" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide empty" id="413"></div>
+      <div class="slide south" id="513" data-type="South St."><div class="content"></div></div>
+      <div class="slide south" id="613" data-type="South St."><div class="content"></div></div>
+      <div class="slide empty" id="713"></div>
+     </div>
+     <div class="section" id="sec14">
+      <div class="slide empty" id="114"></div>
+      <div class="slide empty" id="214"></div>
+      <div class="slide whitehall" id="314" data-type="Whitehall St."><div class="content"></div></div>
+      <div class="slide south" id="414" data-type="South St."><div class="content"></div></div>
+      <div class="slide south" id="514" data-type="South St."><div class="content"></div></div>
+      <div class="slide empty" id="614"></div>
+      <div class="slide empty" id="714"></div>
+     </div>
+     <div class="section" id="sec15">
+      <div class="slide empty" id="115"></div>
+      <div class="slide empty" id="215"></div>
+      <div class="slide empty" id="315"></div>
+      <div class="slide empty" id="415"></div>
+      <div class="slide pier" id="515" data-type="Pier 6"><div class="content"></div></div>
+      <div class="slide empty" id="615"></div>
+      <div class="slide empty" id="715"></div>
+     </div>
+    </div>
+
+  <!-- <script src="/activatefullpage.js" defer></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="e81a660ab9c56777835910d2-text/javascript" src="fullpage.interlockedSlides.min.js?v=2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js" integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ==" crossorigin="anonymous"></script>
+<script src="/script.js" defer></script>
+
+  <script type="e81a660ab9c56777835910d2-text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        //Navigation
+        licenseKey: 'YOUR KEY HERE',
+        interlockedSlidesKey:'bmV3LXlvcmstbWFwLmdsaXRjaC5tZV9TNDBhVzUwWlhKc2IyTnJaV1JUYkdsa1pYTT05Mks=',
+        menu: '#menu',
+        lockAnchors: false,
+        anchors:['sec01', 'sec02','sec03','sec04', 'sec05','sec06','sec07', 'sec08','sec09','sec010', 'sec011','sec012','sec013','sec014','sec015'],
+        navigation: false,
+        navigationPosition: 'right',
+        showActiveTooltip: false,
+        slidesNavigation: false,
+    
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: false,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: true,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        scrollOverflowReset: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 15,
+        bigSectionsDestination: null,
+    
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+    
+        //Design
+        controlArrows: false,
+        verticalCentered: false,
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+        responsiveSlides: false,
+        parallax: false,
+        cards: false,
+    
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+    
+        lazyLoading: true,
+    
+        //events
+        onLeave: function(origin, destination, direction){},
+        afterLoad: function(origin, destination, direction){},
+        afterRender: function(){},
+        afterResize: function(width, height){},
+        afterReBuild: function(){},
+        afterResponsive: function(isResponsive){},
+        afterSlideLoad: function(section, origin, destination, direction){},
+        onSlideLeave: function(section, origin, destination, direction){}
+    });
+    </script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="e81a660ab9c56777835910d2-|49" defer=""></script></body>
+  </html>
