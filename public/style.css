@@ -41,10 +41,14 @@ body {
   margin: 0px;
 }
 
+br{
+  margin-top:5vh;
+}
+
 .fixedbg{
   height:100vh;
   width:100vw;
-  background:radial-gradient(circle at var(--gradValue), var(--bgradient-secondary) 0%, var(--bgradient-alt) 100%);
+  background:radial-gradient(circle at var(--gradValue), var(--bgradient-secondary) 0%, var(--bgradient-primary) 100%);
   position:fixed;
 }
 
@@ -107,8 +111,7 @@ p{
   justify-content: center;
   align-items: center;
   font-size:8rem;
-  color:var(--bgradient-alt);
-  /* color:white; */
+  color:var(--bgradient-primary);
   background-color:var(--red);
   cursor:pointer;
 }
@@ -145,6 +148,17 @@ p{
   max-height:calc(100vh - 16rem);
   display:flex;
   flex-flow:column nowrap;
+  overflow:scroll;
+}
+
+.hpoem .poem{
+  width:40vw;
+  max-height:50vh;
+  margin-top:-20px;
+}
+
+.hpoem .poem p{
+  margin-top:25px;
 }
 
 .text{
@@ -155,6 +169,12 @@ p{
 .poem p{
   font-size:5rem;
   text-align:center;
+  line-height:1;
+  margin-top:50px;
+}
+
+.separator{
+  height:25px;
 }
 
 .border-top{
@@ -193,6 +213,14 @@ p{
   width:20vw;
   height:30vh;
   bottom:0;
+  left:0;
+  align-items: flex-start;
+}
+
+.tleft{
+  width:20vw;
+  height:30vh;
+  top:0;
   left:0;
   align-items: flex-start;
 }
@@ -242,6 +270,7 @@ p{
   width:15vw;
   height:100%;
   border:1px solid var(--red);
+  border-radius: 3vh;
   margin-left:1vh;
   margin-right:1vh;
   margin-bottom:1vh;
@@ -249,174 +278,6 @@ p{
   display:flex;
   justify-content: space-between;
   align-items:center;
-}
-
-.ceiling{
-  height:100%;
-  width:50%;
-  background-color: var(--red);
-}
-
-.windows{
-  width:50%;
-  height:100%;
-  /* background-color: var(--red); */
-  display:flex;
-  flex-flow:row nowrap;
-  align-items: center;
-  margin-left:10px;
-  margin-right:10px;
-}
-
-.wleft{
-  height:100%;
-  width:50%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.wright{
-  height:100%;
-  width:50%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-}
-
-.window{
-  width:80%;
-  height:12%;
-  border:1px solid var(--red);
-  margin-top:15%;
-  margin-bottom:15%;
-  margin-left:0.5vw;
-  margin-right:0.5vw;
-  display:flex;
-}
-
-.shutter{
-  height:100%;
-  background-color: var(--red);
-  animation-iteration-count: infinite;
-}
-
-.building p{
-  display:none;
-  margin:0;
-  font-family: "city";
-  font-size:15vw;
-  vertical-align: top;
-}
-
-.right .building p{
-  transform: rotate(180deg);
-  margin-top:0;
-}
-
-.left .building{
-  flex-direction:row-reverse;
-}
-
-.left .window, .tleft .window, .bleft .window, .htleft .window, .hbleft .window{
-  justify-content:flex-end;
-}
-
-.wleft .window:nth-child(1) .shutter{
-  animation-name:open-close-1;
-  animation-direction: reverse;
-  animation-duration:4s;
-}
-
-@keyframes open-close-1 {
-  0%   {width: 20%;}
-  20%   {width: 80%}
-  90%   {width: 80%}
-  100%   {width: 20%;}
-}
-
-.wleft .window:nth-child(2) .shutter{
-  animation-name:open-close-2;
-  animation-direction: normal;
-  animation-duration:5s;
-}
-
-@keyframes open-close-2 {
-  0%   {width: 70%;}
-  30%   {width: 5%}
-  80%   {width: 80%}
-  100%   {width: 70%;}
-}
-
-.wleft .window:nth-child(3) .shutter{
-  animation-name:open-close-3;
-  animation-direction: normal;
-  animation-duration:3s;
-}
-
-@keyframes open-close-3 {
-  0%   {width: 30%;}
-  10%  {width: 95%}
-  50%   {width: 95%}
-  100%   {width: 30%;}
-}
-
-.wleft .window:nth-child(4) .shutter{
-  animation-name:open-close-4;
-  animation-direction: normal;
-  animation-duration:5s;
-}
-
-@keyframes open-close-4 {
-  0%   {width: 50%;}
-  10%   {width: 70%}
-  90%   {width: 70%}
-  100%   {width: 50%;}
-}
-
-.wright .window:nth-child(1) .shutter{
-  animation-name:open-close-4;
-  animation-direction: normal;
-  animation-duration:3s;
-}
-
-.wright .window:nth-child(2) .shutter{
-  animation-name:open-close-1;
-  animation-direction: normal;
-  animation-duration:6s;
-}
-
-.wright .window:nth-child(3) .shutter{
-  animation-name:open-close-2;
-  animation-direction: reverse;
-  animation-duration:4s;
-}
-
-.wright .window:nth-child(4) .shutter{
-  animation-name:open-close-3;
-  animation-direction: normal;
-  animation-duration:3s;
-}
-
-
-.bottom .hbuilding{
-  border-top-width:35px;
- } 
-
-.hblock-element{
-  position:absolute;
-  display:flex;
-  flex-flow:row nowrap;
-  justify-content:center;
-  /* background-color:blue; */
-}
-
-.bottom{
-  height:30vh;
-  width:100vw;
-  bottom:0;
-  align-items: flex-end;
 }
 
 .hbuildings{
@@ -427,13 +288,312 @@ p{
 }
 
 .hbuilding{
+  display:hidden;
   width:100%;
   height:25vh;
-  border:2px solid var(--red);
+  border:1px solid var(--red);
+  border-radius: 3vh;
   margin-left:1vh;
   margin-bottom:1vh;
   margin-right:1vh;
+  display:flex;
   /* border:2px solid var(--red); */
+}
+
+.top .hbuilding{
+  flex-flow:column-reverse nowrap;
+}
+
+.bottom .hbuilding{
+  flex-flow:column nowrap;
+}
+
+.buildings .ceiling{
+  height:100%;
+  width:50%;
+  background-color: var(--red);
+  border-radius:3vh;
+}
+
+.hbuildings .ceiling{
+  width:100%;
+  height:50%;
+  background-color: var(--red);
+  border-radius:3vh;
+}
+
+.buildings .windows{
+  width:50%;
+  height:100%;
+  /* background-color: var(--red); */
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.hbuildings .windows{
+  height:50%;
+  width:100%;
+  /* background-color: var(--red); */
+  display:flex;
+  flex-flow:column nowrap;
+  align-items: center;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.buildings .wleft{
+  height:100%;
+  width:50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buildings .wright{
+  height:100%;
+  width:50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+.hbuildings .wleft{
+  width:100%;
+  height:50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hbuildings .wright{
+  width:100%;
+  height:50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.window{
+  display:flex;
+  overflow:hidden;
+  border:1px solid var(--red);
+  border-radius: 1.1vh;
+  margin-top:15%;
+  margin-bottom:15%;
+  margin-left:0.5vw;
+  margin-right:0.5vw;
+}
+
+.buildings .window{
+
+  width:80%;
+  height:12%;
+}
+
+.hbuildings .window{
+  height:80%;
+  width:12%;
+  border-radius: 1.1vh;
+  flex-flow: column nowrap;
+}
+
+.top .window{
+  flex-flow: column-reverse nowrap;
+}
+
+.buildings .shutter{
+  height:100%;
+  background-color: var(--red);
+  animation-iteration-count: infinite;
+}
+
+.hbuildings .shutter{
+  width:100%;
+  background-color: var(--red);
+  animation-iteration-count: infinite;
+}
+
+.left .building, .tleft .building, .bleft .building,  .htleft .building,  .hbleft .building{
+  flex-direction:row-reverse;
+}
+
+.left .window, .tleft .window, .bleft .window, .htleft .window, .hbleft .window{
+  justify-content:flex-end;
+}
+
+.buildings .wleft .window:nth-child(1) .shutter{
+  animation-name:open-close-1;
+  animation-direction: reverse;
+  animation-duration:20s;
+}
+
+.hbuildings .wleft .window:nth-child(1) .shutter{
+  animation-name:vopen-close-1;
+  animation-direction: reverse;
+  animation-duration:20s;
+}
+
+@keyframes open-close-1 {
+  0%   {width: 80%;}
+  100%   {width: 80%;}
+}
+
+@keyframes vopen-close-1 {
+  0%   {height: 80%;}
+  100%   {height: 80%;}
+}
+
+.buildings .wleft .window:nth-child(2) .shutter{
+  animation-name:open-close-2;
+  animation-direction: reverse;
+  animation-duration:25s;
+}
+
+.hbuildings .wleft .window:nth-child(2) .shutter{
+  animation-name:vopen-close-2;
+  animation-direction: reverse;
+  animation-duration:25s;
+}
+
+@keyframes open-close-2 {
+  0%   {width: 90%;}
+  30%   {width: 5%}
+  80%   {width: 5%}
+  100%   {width: 90%;}
+}
+
+@keyframes vopen-close-2 {
+  0%   {height: 90%;}
+  30%   {height: 5%}
+  80%   {height: 5%}
+  100%   {height: 90%;}
+}
+
+.buildings .wleft .window:nth-child(3) .shutter{
+  animation-name:open-close-3;
+  animation-direction: normal;
+  animation-duration:28s;
+}
+
+.hbuildings .wleft .window:nth-child(3) .shutter{
+  animation-name:vopen-close-3;
+  animation-direction: normal;
+  animation-duration:38s;
+}
+
+
+@keyframes open-close-3 {
+  0%   {width: 30%;}
+  100%   {width: 30%;}
+}
+
+@keyframes vopen-close-3 {
+  0%   {height: 30%;}
+  100%   {height: 30%;}
+}
+
+
+.buildings .wleft .window:nth-child(4) .shutter{
+  animation-name:open-close-4;
+  animation-direction: normal;
+  animation-duration:25s;
+}
+
+.hbuildings .wleft .window:nth-child(4) .shutter{
+  animation-name:vopen-close-4;
+  animation-direction: normal;
+  animation-duration:25s;
+}
+
+@keyframes open-close-4 {
+  0%   {width: 20%;}
+  10%   {width: 70%}
+  90%   {width: 70%}
+  100%   {width: 20%;}
+}
+
+@keyframes vopen-close-4 {
+  0%   {height: 20%;}
+  10%   {height: 70%}
+  90%   {height: 70%}
+  100%   {height: 20%;}
+}
+
+.buildings .wright .window:nth-child(1) .shutter{
+  animation-name:open-close-4;
+  animation-direction: normal;
+  animation-duration:25s;
+}
+
+.hbuildings .wright .window:nth-child(1) .shutter{
+  animation-name:vopen-close-4;
+  animation-direction: normal;
+  animation-duration:25s;
+}
+
+.buildings .wright .window:nth-child(2) .shutter{
+  animation-name:open-close-1;
+  animation-direction: normal;
+  animation-duration:26s;
+}
+
+.hbuildings .wright .window:nth-child(2) .shutter{
+  animation-name:vopen-close-1;
+  animation-direction: normal;
+  animation-duration:26s;
+}
+
+.buildings .wright .window:nth-child(3) .shutter{
+  animation-name:open-close-2;
+  animation-direction: reverse;
+  animation-duration:20s;
+}
+
+.hbuildings .wright .window:nth-child(3) .shutter{
+  animation-name:vopen-close-2;
+  animation-direction: reverse;
+  animation-duration:20s;
+}
+
+.buildings .wright .window:nth-child(4) .shutter{
+  animation-name:open-close-3;
+  animation-direction: normal;
+  animation-duration:23s;
+}
+
+.hbuildings .wright .window:nth-child(4) .shutter{
+  animation-name:vopen-close-3;
+  animation-direction: normal;
+  animation-duration:23s;
+}
+
+
+.hblock-element{
+  position:absolute;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:center;
+  /* background-color:blue; */
+}
+
+.bottom{
+  height:25vh;
+  width:100vw;
+  bottom:0;
+  align-items: flex-end;
+}
+
+.top{
+  height:27vh;
+  width:100vw;
+  top:0;
+  align-items: flex-end;
 }
 
 .park{
@@ -442,8 +602,16 @@ p{
   display:flex;
   justify-content:center;
   align-items: center;
+  overflow:hidden;
+}
+
+.block-element .park{
   flex-flow:column wrap;
-  overflow-y:hidden;
+}
+
+.hblock-element .park{
+  height:27vh;
+  flex-flow:row nowrap;
 }
 
 .tree{
@@ -455,12 +623,13 @@ p{
   display:flex;
   justify-content: center;
   align-items: center;
-  font-size:16.5vw;
   font-family: "city";
   animation-duration:8s;
   animation-iteration-count: infinite;
   /* background-color:black; */
+  flex-shrink: 0;
 }
+
 
 .tree:nth-child(odd){
   animation-direction: normal;
@@ -481,10 +650,22 @@ p{
 .tree p{
   display:flex;
   align-items: center;
+  justify-content: center;
   margin:0px;
-  font-size:16.3vw;
   line-height:0;
   margin-top:-3vh;
+  height:100%;
+  width:100%;
+  color:var(--red);
+}
+
+.block-element .tree p{
+  font-size:16.3vw;
+}
+
+.hblock-element .tree p{
+  font-size:14vw;
+  margin:10px;
 }
 
 #tree0{
@@ -518,11 +699,62 @@ p{
   justify-content: center;
   align-items: center;
 }
-/* 
-.broadway{
-  background-color:#bdbdbd;
+
+.cwalkh{
+  position:absolute;
+  width:10vw;
+  height:40vh;
+  display:flex;
+  justify-content: space-evenly;
+  flex-flow:column nowrap;
+  margin-bottom:1vw;
 }
 
-.state{
-  background-color:#63bcff;
-} */
+.leftwalk{
+  left:20vw;
+}
+
+.rightwalk{
+  right:20vw;
+}
+
+.cwalkv{
+  position:absolute;
+  width:40vw;
+  height:20vh;
+  display:flex;
+  justify-content: space-evenly;
+  flex-flow:row nowrap;
+  margin-right:1vw;
+}
+
+.topwalk{
+  top:12vh;
+}
+
+.bottomwalk{
+  bottom:12vh;
+}
+
+.cbarh{
+  width:100%;
+  height:3vw;
+  border-radius:0.5vw;
+  background-color:var(--bgradient-primary);
+}
+
+.leftwalk .cbarh{
+  margin-top:1vw;
+}
+
+.rightwalk .cbarh{
+  margin-top:1vw;
+}
+
+.cbarv{
+  width:3vw;
+  height:100%;
+  border-radius:0.5vw;
+  margin-left:1vw;
+  background-color:var(--bgradient-primary);
+}

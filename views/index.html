@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NYC</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=IBM+Plex+Mono:wght@200;300&display=swap&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" /> -->
+
+    <!-- import the webpage's javascript file -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script> -->
+  </head>  
+  <body>
+    <div id="grid">
+      <div id="title"><p>A poetic data journey<br>through NYC</p></div>
+      <!-- <a href="/map/#sec05">To map</a> -->
+      <div class="gridsec" id="sec1">
+        <div class="block empty"></div>
+        <div class="block wall" id="201" data-type="Wall St."></div>
+        <div class="block wall" id="301" data-type="Wall St."></div>
+        <div class="block wall" id="401" data-type="Wall St."></div>
+        <div class="block wall" id="501" data-type="Wall St."></div>
+        <div class="block wall" id="601" data-type="Wall St."></div>
+        <div class="block wall" id="701" data-type="Wall St."></div>
+      </div>
+      <div class="gridsec" id="sec2">
+        <div class="block empty" id="102"></div>
+        <div class="block broadway" id="202" data-type="Broadway"></div>
+        <div class="block empty" id="302"></div>
+        <div class="block new vertical" id="402" data-type="New St."></div>
+        <div class="block broad" id="502" data-type="Broad St."></div>
+        <div class="block empty" id="602"></div>
+        <div class="block williams" id="702" data-type="Williams St."></div>
+      </div>
+      <div class="gridsec" id="sec3">
+        <div class="block empty" id="103"></div>
+        <div class="block broadway" id="203" data-type="Broadway"></div>
+        <div class="block exchange-pl" id="303" data-type="Exchange Pl."></div>
+        <div class="block exchange-pl" id="403" data-type="Exchange Pl."></div>
+        <div class="block broad" id="503" data-type="Broad St."></div>
+        <div class="block exchange-pl" id="603" data-type="Exchange Pl."></div>
+        <div class="block williams" id="703" data-type="Williams St."></div>
+      </div>
+      <div class="gridsec" id="sec4">
+        <div class="block empty" id="104"></div>
+        <div class="block broadway" id="204" data-type="Broadway"></div>
+        <div class="block empty" id="304"></div>
+        <div class="block new vertical" id="404" data-type="New St."></div>
+        <div class="block broad" id="504" data-type="Broad St."></div>
+        <div class="block empty" id="604"></div>
+        <div class="block williams" id="704" data-type="Williams St."></div>
+      </div>
+      <div class="gridsec" id="sec5">
+        <div class="block broadway" data-type="Broadway"><a href="/map/#sec05"></a></div>
+        <div class="block bowling-green" id="205" data-type="Bowling Green"></div>
+        <div class="block broadway" id="305" data-type="Broadway"></div>
+        <div class="block beaver" id="405" data-type="Beaver St."></div>
+        <div class="block broad" id="505" data-type="Broad St."></div>
+        <div class="block beaver" id="605" data-type="Beaver St."></div>
+        <div class="block williams" id="705" data-type="Williams St."></div>
+      </div>
+      <div class="gridsec" id="sec6">
+        <div class="block battery-pl" id="106" data-type="Battery Pl"></div>
+        <div class="block bowling-green hpoem" id="206" data-type="Bowling Green"></div>
+        <div class="block broadway" id="306" data-type="Whitehall St."></div>
+        <div class="block empty" id="406"></div>
+        <div class="block broad" id="506" data-type="Broad St."></div>
+        <div class="block empty" id="606"></div>
+        <div class="block williams" id="706" data-type="Williams St."></div>
+      </div>
+      <div class="gridsec" id="sec7">
+        <div class="block state" id="107" data-type="State St."></div>
+        <div class="block empty" id="207"></div>
+        <div class="block whitehall" id="307" data-type="Whitehall St."></div>
+        <div class="block stone horizontal" id="407" data-type="Stone St."></div>
+        <div class="block broad" id="507" data-type="Broad St."></div>
+        <div class="block s-williams" id="607" data-type="S. Williams St."></div>
+        <div class="block williams" id="707" data-type="Williams St."></div>
+      </div>
+      <div class="gridsec" id="sec8">
+        <div class="block state" id="108" data-type="State St."></div>
+        <div class="block bridge" id="208" data-type="Bridge St."></div>
+        <div class="block whitehall" id="308" data-type="Whitehall St."></div>
+        <div class="block bridge" id="408" data-type="Bridge St."></div>
+        <div class="block broad" id="508" data-type="Broad St."></div>
+        <div class="block coenties-alley vertical" id="608" data-type="Coenties Alley"></div>
+        <div class="block williams" id="708" data-type="Williams St."></div>
+       </div>
+       <div class="gridsec" id="sec9">
+        <div class="block state" id="109" data-type="State St."></div>
+        <div class="block empty" id="209"></div>
+        <div class="block whitehall" id="309" data-type="Whitehall St."></div>
+        <div class="block empty" id="409"></div>
+        <div class="block broad" id="509" data-type="Broad St."></div>
+        <div class="block pearl" id="609" data-type="Pearl St."></div>
+        <div class="block williams" id="709" data-type="Williams St."></div>
+       </div>
+       <div class="gridsec" id="sec10">
+        <div class="block state" id="110" data-type="State St."></div>
+        <div class="block pearl" id="210" data-type="Pearl St."></div>
+        <div class="block whitehall" id="310" data-type="Whitehall St."></div>
+        <div class="block pearl" id="410" data-type="Pearl St."></div>
+        <div class="block broad" id="510" data-type="Broad St."></div>
+        <div class="block coenties-slip verical" id="610" data-type="Coenties Slip"></div>
+        <div class="block water" id="710" data-type="Water St."></div>
+       </div>
+       <div class="gridsec" id="sec11">
+        <div class="block state" id="111" data-type="State St."></div>
+        <div class="block empty" id="211"></div>
+        <div class="block whitehall" id="311" data-type="Whitehall St."></div>
+        <div class="block moore vertical" id="411" data-type="Moore St."></div>
+        <div class="block broad" id="511" data-type="Broad St."></div>
+        <div class="block water" id="611" data-type="Water St."></div>
+        <div class="block old-slip" id="711" data-type="Old Slip"></div>
+       </div>
+       <div class="gridsec" id="sec12">
+        <div class="block state" id="112" data-type="State St."></div>
+        <div class="block state" id="212" data-type="State St."></div>
+        <div class="block whitehall" id="312" data-type="Whitehall St."></div>
+        <div class="block water" id="412" data-type="Water St."></div>
+        <div class="block water" id="512" data-type="Water St."></div>
+        <div class="block veteran-memorial" id="612" data-type="Veteran Memorial"></div>
+        <div class="block south" id="712" data-type="South St."></div>
+       </div>
+       <div class="gridsec" id="sec13">
+        <div class="block empty" id="113"></div>
+        <div class="block empty" id="213"></div>
+        <div class="block whitehall" id="313" data-type="Whitehall St."></div>
+        <div class="block empty" id="413"></div>
+        <div class="block south" id="513" data-type="South St."></div>
+        <div class="block south" id="613" data-type="South St."></div>
+        <div class="block empty" id="713"></div>
+       </div>
+       <div class="gridsec" id="sec14">
+        <div class="block empty" id="114"></div>
+        <div class="block empty" id="214"></div>
+        <div class="block whitehall" id="314" data-type="Whitehall St."></div>
+        <div class="block south" id="414" data-type="South St."></div>
+        <div class="block south" id="514" data-type="South St."></div>
+        <div class="block empty" id="614"></div>
+        <div class="block empty" id="714"></div>
+       </div>
+       <div class="gridsec" id="sec15">
+        <div class="block empty" id="115"></div>
+        <div class="block empty" id="215"></div>
+        <div class="block empty" id="315"></div>
+        <div class="block empty" id="415"></div>
+        <div class="block pier" id="515" data-type="Pier 6"></div>
+        <div class="block empty" id="615"></div>
+        <div class="block empty" id="715"></div>
+       </div>
+      </div>
+  </body>
+
+  <!-- <script src="/activatefullpage.js" defer></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="/index.js" defer></script>
+  </html>

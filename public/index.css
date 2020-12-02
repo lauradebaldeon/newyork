@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "stencil";
+    src: url("https://cdn.glitch.com/b08c1cf8-2670-4add-b77d-522ca873e010%2FGT-Sectra-Display-Trial-Light.otf?v=1605825639086");
+  }
+  
+  @font-face {
+    font-family: "signage";
+    src: url("https://cdn.glitch.com/b08c1cf8-2670-4add-b77d-522ca873e010%2FGT-Pressura-Pro-Trial-Light.otf?v=1605656661314");
+  }
+
+  :root{
+    --black:black;
+  }
+
+  body{
+      margin:0px;
+      font-size:1vh;
+  }
+
+  #title{
+      position:absolute;
+      color:#303030;
+      align-self: center;
+      font-family:"stencil";
+      font-size:8rem;
+      width:80%;
+      text-align: center;
+      line-height:1;
+      z-index:0;
+  }
+
+  #grid{
+      height:100vh;
+      width:100vw;
+      display:flex;
+      flex-flow:column nowrap;
+      overflow:hidden;
+      justify-content: center;
+      align-items: center;
+      background-color:var(--black);
+  }
+
+  .gridsec{
+      width:100%;
+      height:50%;
+      display:flex;
+      flex-flow:row nowrap;
+      z-index:1;
+  }
+
+  .block{
+      /* background-color:var(--black); */
+      width:15%;
+      /* border-radius:0.5vw; */
+      margin:0.5px;
+      /* border:0.5px solid;
+      border-color:black; */
+      font-family:"signage";
+      font-size:1.5rem;
+      box-shadow: 0px 0px #888888;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      transition:all 0.5s ease-out;
+  }
+
+  p{
+      margin:0px;
+  }
+
+  .block p{
+      visibility:hidden;
+      cursor:default;
+  }
+
+  .block:hover p{
+      visibility:visible;
+  }
+
+  .empty{
+      /* background-color:var(--black); */
+      visibility:hidden;
+  }
+
+  #enter{
+     background-color:#bdff7a; 
+  }
+
+  a{
+      width:100%;
+      height:100%;
+  }

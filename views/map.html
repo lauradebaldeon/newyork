@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=IBM+Plex+Mono:wght@200;300&display=swap&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" /> -->
 
     <!-- import the webpage's javascript file -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script> -->
@@ -21,7 +21,7 @@
     <div id="fullpage">
     <div class="section" id="sec1">
       <div class="slide empty" id="101"></div>
-      <div class="slide broadway" id="201" data-type="Wall St."><div class="content"></div></div>
+      <div class="slide wall" id="201" data-type="Wall St."><div class="content"></div></div>
       <div class="slide wall" id="301" data-type="Wall St."><div class="content"></div></div>
       <div class="slide wall" id="401" data-type="Wall St."><div class="content"></div></div>
       <div class="slide wall" id="501" data-type="Wall St."><div class="content"></div></div>
@@ -65,8 +65,8 @@
       <div class="slide williams" id="705" data-type="Williams St."><div class="content"></div></div>
     </div>
     <div class="section" id="sec6">
-      <div class="slide broadway" id="106" data-type="Battery Pl"><div class="content"></div></div>
-      <div class="slide bowling-green" id="206" data-type="Bowling Green"></div>
+      <div class="slide battery-pl" id="106" data-type="Battery Pl"><div class="content"></div></div>
+      <div class="slide bowling-green hpoem" id="206" data-type="Bowling Green"><div class="content"></div></div>
       <div class="slide broadway" id="306" data-type="Whitehall St."><div class="content"></div></div>
       <div class="slide empty" id="406"></div>
       <div class="slide broad" id="506" data-type="Broad St."><div class="content"></div></div>
@@ -158,8 +158,8 @@
 
   <!-- <script src="/activatefullpage.js" defer></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script type="e81a660ab9c56777835910d2-text/javascript" src="fullpage.interlockedSlides.min.js?v=2"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js" integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ==" crossorigin="anonymous"></script>
+  <script type="e81a660ab9c56777835910d2-text/javascript" src="/interlockedSlides.js"></script>
+<script src="/fullpage.extensions.min.js"></script>
 <script src="/script.js" defer></script>
 
   <script type="e81a660ab9c56777835910d2-text/javascript">
@@ -178,7 +178,7 @@
         //Scrolling
         css3: true,
         scrollingSpeed: 700,
-        autoScrolling: true,
+        <!-- autoScrolling: false, -->
         fitToSection: true,
         fitToSectionDelay: 1000,
         scrollBar: false,
@@ -195,7 +195,8 @@
         offsetSections: false,
         resetSliders: false,
         fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
+        normalScrollElements: '.poem p',
+        //'#element1, .element2',
         scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
